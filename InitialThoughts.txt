@@ -1,0 +1,10 @@
+1) PWA App -> angular 6 feature  -> internet 
+2) PWA => Progressive web Apps
+3) spring => backend
+4) angular 6 => User Interface
+5) Data Analytics - 
+      	a) visualizations
+       	b) user management
+	c) social logins
+	d) Task Allocation - team management 
+6) Time Management*Team Management-JIRA
