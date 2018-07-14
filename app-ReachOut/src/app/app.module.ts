@@ -11,7 +11,9 @@ import { ExpWidgetComponent } from './shared/uiarsenal/exp-widget/exp-widget.com
 import { StageComponent } from './shared/layout/stage/stage.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+import { HomeComponent } from './pages/home/home.component';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,10 +23,11 @@ import { environment } from '../environments/environment';
     ProfileComponent,
     WidgetComponent,
     ExpWidgetComponent,
-    StageComponent
+    StageComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,routes,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
