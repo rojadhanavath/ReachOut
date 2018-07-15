@@ -1,1 +1,23 @@
 <!--Design of the main header -->
+<mat-toolbar color="primary">
+
+  <span>{{title}}</span>
+  <span class="example-spacer"></span>
+  <button></button>
+  <mat-icon class="example-icon">favorite</mat-icon>
+  <mat-icon class="example-icon">delete</mat-icon>
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+// requirements // color // no of buttons either drop down or normal button or just icons // logo optional image + text logo //

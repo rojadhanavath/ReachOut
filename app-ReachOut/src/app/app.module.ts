@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './shared/layout/main-header/main-header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
@@ -14,6 +13,10 @@ import { environment } from '../environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap/dropdown';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +30,10 @@ import { routes } from './app.router';
     HomeComponent
   ],
   imports: [
-    BrowserModule,routes,
+    BrowserModule,routes,NgbModule.forRoot(),MatToolbarModule, MatIconModule,NgbDropdownModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
